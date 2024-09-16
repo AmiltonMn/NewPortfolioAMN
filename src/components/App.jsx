@@ -54,13 +54,12 @@ function App() {
 
           <div>
             <h1 style={{marginBottom: '30px'}}>Experiências</h1>
-            <div style={{flexDirection: 'row'}}>
-              <img src={AliancaSul} alt="" style={{borderRadius: '999px'}}/>
-
-              <div>
-                Aliança Sul - Atendente Telemarketing Ativo;
-                Aliança Sul - BackOffice;
-              </div>
+            <div style={{flexDirection: 'column'}}>
+                <img src={AliancaSul} alt="" style={{borderRadius: '999px'}}/>
+                <div>
+                  <p>Aliança Sul - Atendente Telemarketing Ativo;</p>
+                  <p>Aliança Sul - BackOffice;</p>
+                </div>
             </div>     
               
               Bosch - Aprendiz em Soluções Digitais.
