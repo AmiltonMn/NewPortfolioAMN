@@ -3,6 +3,8 @@ import { Menu } from './Menu'
 import Perfil from '../assets/Perfil.jpg'
 import BoschImage from '../assets/Bosch.jpg'
 import BoschImage70Anos from '../assets/Bosch70Anos.jpg'
+import Ternaria from '../assets/Ternaria.png'
+import AliancaSul from '../assets/AliancaSul.png'
 
 function App() {
   return (
@@ -19,8 +21,7 @@ function App() {
         <hr style={{width: '95%'}}/>
       </div>
 
-      <div className={`${style.SobreMim} ${style.RobotoFont}`}>
-
+      <div className={`${style.SobreMim} ${style.RobotoFont}`} id='aboutMe'>
 
         <div>
             <img className={`${style.ImagemPerfil}`} src={Perfil} width={400} height={'auto'} alt="Foto minha talvez" />
@@ -37,7 +38,7 @@ function App() {
             Comecei a estudar progamação no final de 2023, com Python e Visualg, atualmente
             estou fazendo curso de Desenvolvimento de Sistemas no Senai, sou Aprendiz de
             Soluções Digitais na Bosch Brasil e faço faculdade de Análise e Desenvolvimento
-            de Sistemas na PUCPR
+            de Sistemas na PUCPR.
           </p>
 
         </div>
@@ -48,16 +49,23 @@ function App() {
         <hr style={{width: '95%'}}/>
       </div>
 
-      <div className={`${style.RobotoFont} ${style.Experiencias}`}>
+      <div className={`${style.RobotoFont} ${style.Experiencias}`} id='experiences'>
         <div className={`${style.ExperienciasTexto}`}>
 
-          <h1 style={{marginBottom: '30px'}}>Experiências</h1>
+          <div>
+            <h1 style={{marginBottom: '30px'}}>Experiências</h1>
+            <div style={{flexDirection: 'row'}}>
+              <img src={AliancaSul} alt="" style={{borderRadius: '999px'}}/>
 
-          <ul>
-            <li>Aliança Sul - Atendente Telemarketing Ativo</li>
-            <li>Aliança Sul - BackOffice</li>
-            <li>Bosch - Aprendiz em Soluções Digitais</li>
-          </ul>
+              <div>
+                Aliança Sul - Atendente Telemarketing Ativo;
+                Aliança Sul - BackOffice;
+              </div>
+            </div>     
+              
+              Bosch - Aprendiz em Soluções Digitais.
+          </div>
+          
 
         </div>
 
@@ -70,8 +78,44 @@ function App() {
         <hr style={{width: '95%'}}/>
       </div>
 
-      <div id='projects'>
-        <h1>My Projects!</h1>
+      <div className={`${style.RobotoFont} ${style.Projetos}`} id='projects'>
+        
+        <div className={`${style.ProjetosTexto}`}>
+            <h1 style={{marginBottom: '30px'}}>Projetos</h1>
+
+            <p>
+              Alguns projetos que eu desenvolvi ao decorrer de meu aprendizado.
+            </p>
+        </div>
+
+      </div>
+
+      <div className={`${style.RobotoFont} ${style.SobreProjetos}`}>
+
+        <div>
+            <a href="https://github.com/AmiltonMn/Ternaria"><img className={style.ImagemTernaria} src={Ternaria} alt="" width={600}/></a>
+        </div>
+
+        <div style={{width: '40%', marginLeft: '40px'}}>
+          <h1 style={{marginBottom: '30px'}}>Ternaria</h1>
+
+          <p>Este projeto foi desenvolvido para a conclusão da matéria de Lógica de Programação que tive no Senai. Ele foi desenvolvido com meus dois colegas Fernando e Eduardo Ribeiro</p>
+        </div>
+
+      </div>
+
+      <div className={`${style.RobotoFont} ${style.SobreProjetos}`}>
+
+        <div style={{width: '40%', marginRight: '40px'}}>
+          <h1 style={{marginBottom: '30px'}}>My Movie List</h1>
+
+          <p>Este projeto foi desenvolvido para a finalização da matéria de Web, onde nosso objetivo era fazer um site com CRUD. O projeto foi desenvolvido em conjunto com meu colega Fernando.</p>
+        </div>
+
+        <div>
+            <a href="https://github.com/AmiltonMn/Ternaria"><img className={style.ImagemTernaria} src={Ternaria} alt="" width={600}/></a>
+        </div>
+
       </div>
 
       <div id='contact'>

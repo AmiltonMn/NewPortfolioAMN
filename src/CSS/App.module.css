@@ -58,7 +58,16 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        align-items: center;
         width: 40%;
+    }
+
+    .SobreProjetos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
     }
 
 /* Fontes */
@@ -80,4 +89,8 @@
 
 .ImagemPerfil{
     border-radius: 999px;
+}
+
+.ImagemTernaria{
+    border-radius: 25px;
 }
