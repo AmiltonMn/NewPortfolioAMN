@@ -1,6 +1,6 @@
 Portfólio em React com Vite.js contendo 5 sessões sendo ela:
 
-- [ ] 1- menu de interação com scrool para sections da pagina. 0,5pto
+- [ X ] 1- menu de interação com scrool para sections da pagina. 0,5pto
 - [ ] 2- sessao com apresentação resumida profissional .0,5pto
 - [ ] 3- histórico profissional de empresas e freelas. 0,5pto
 - [ ] 4- projetos estudos com links de github .0,5pto

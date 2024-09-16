@@ -3,7 +3,7 @@ import '../CSS/Menu.module.css'
 export const Menu = () => {
 
     return (
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', backgroundColor: 'grey', height: '50px'}}>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', backgroundColor: 'grey', height: '50px', flexWrap: 'wrap'}}>
             <div style={{marginLeft: '20px'}}>
                 <h1>Amilton</h1>
             </div>

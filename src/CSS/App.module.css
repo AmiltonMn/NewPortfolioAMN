@@ -1,0 +1,66 @@
+/* Sections */
+
+    /* Section do Bem Vindo */
+    .BemVindo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 800px;
+        margin-top: 30px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Section do Sobre Mim */
+
+    .SobreMim{
+        display: flex;
+        justify-content: space-evenly;
+        height: 800px;
+        align-items: center;
+    }
+
+    .SobreMimTexto{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    /* Section do Experiências */
+
+
+    .Experiencias{
+        display: flex;
+        justify-content: space-evenly;
+        height: 800px;
+        align-items: center;
+    }
+
+    .ExperienciasTexto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 50%;
+    }
+
+/* Fontes */
+
+.RobotoFont{
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Imagens */
+
+.ImagemBemVindo{
+    width: 550px;
+}
+
+.BoschImage{
+    border-radius: 15px;
+}
+
+.ImagemPerfil{
+    border-radius: 999px;
+}
