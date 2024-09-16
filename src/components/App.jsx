@@ -2,6 +2,7 @@ import style from '../CSS/App.module.css'
 import { Menu } from './Menu'
 import Perfil from '../assets/Perfil.jpg'
 import BoschImage from '../assets/Bosch.jpg'
+import BoschImage70Anos from '../assets/Bosch70Anos.jpg'
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
           <img className={style.ImagemBemVindo} src="https://i.pinimg.com/originals/78/5a/1b/785a1b9c359640da6bc9cfe3670b42ba.png" alt="fotoDoBemVindo"/>
       </div>
 
+      <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <hr style={{width: '95%'}}/>
+      </div>
 
       <div className={`${style.SobreMim} ${style.RobotoFont}`}>
 
@@ -21,7 +25,6 @@ function App() {
         <div>
             <img className={`${style.ImagemPerfil}`} src={Perfil} width={400} height={'auto'} alt="Foto minha talvez" />
         </div>
-
 
         <br />
 
@@ -41,6 +44,10 @@ function App() {
 
       </div>
 
+      <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <hr style={{width: '95%'}}/>
+      </div>
+
       <div className={`${style.RobotoFont} ${style.Experiencias}`}>
         <div className={`${style.ExperienciasTexto}`}>
 
@@ -55,7 +62,12 @@ function App() {
         </div>
 
         <img className={style.BoschImage} src={BoschImage} alt="" width={350}/>
+        <img className={style.BoschImage} src={BoschImage70Anos} alt="" width={350}/>
         
+      </div>
+
+      <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <hr style={{width: '95%'}}/>
       </div>
 
       <div id='projects'>
