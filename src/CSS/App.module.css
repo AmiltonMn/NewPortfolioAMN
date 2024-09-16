@@ -17,6 +17,7 @@
     .SobreMim{
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         height: 800px;
         align-items: center;
     }
@@ -28,16 +29,32 @@
     }
 
     /* Section do Experiências */
-
-
     .Experiencias{
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         height: 800px;
         align-items: center;
     }
 
     .ExperienciasTexto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    /* Section dos Projetos */
+    .Projetos{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 800px;
+        align-items: center;
+    }
+
+    .ProjetosTexto{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
