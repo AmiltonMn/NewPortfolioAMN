@@ -11,4 +11,8 @@
 section
 {
   flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  justify-content: center;
 }

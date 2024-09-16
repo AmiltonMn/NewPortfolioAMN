@@ -1,11 +1,18 @@
+import '../CSS/Menu.module.css'
+
 export const Menu = () => {
 
     return (
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around', backgroundColor: 'grey', height: '50px'}}>
-            <a href="#aboutMe">Pág1</a>
-            <a href="#professionalHistory">Pág2</a>
-            <a href="#projects">Pág3</a>
-            <a href="#contact">Pág4</a>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', backgroundColor: 'grey', height: '50px'}}>
+            <div style={{marginLeft: '20px'}}>
+                <h1>Amilton</h1>
+            </div>
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: '40%'}}>
+                <a href="#aboutMe">About me</a>
+                <a href="#professionalHistory">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contacts</a>
+            </div>
         </div>
     )
 }
