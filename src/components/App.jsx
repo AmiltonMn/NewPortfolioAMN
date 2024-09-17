@@ -1,10 +1,8 @@
 import style from '../CSS/App.module.css'
 import { Menu } from './Menu'
 import Perfil from '../assets/Perfil.jpg'
-import BoschImage from '../assets/Bosch.jpg'
-import BoschImage70Anos from '../assets/Bosch70Anos.jpg'
 import Ternaria from '../assets/Ternaria.png'
-import AliancaSul from '../assets/AliancaSul.png'
+import AliancaSul from '../assets/AliancaSul.jpg'
 
 function App() {
   return (
@@ -52,24 +50,20 @@ function App() {
       <div className={`${style.RobotoFont} ${style.Experiencias}`} id='experiences'>
         <div className={`${style.ExperienciasTexto}`}>
 
+          <h1 style={{marginBottom: '30px'}}>Experiências</h1>
           <div>
-            <h1 style={{marginBottom: '30px'}}>Experiências</h1>
-            <div style={{flexDirection: 'column'}}>
-                <img src={AliancaSul} alt="" style={{borderRadius: '999px'}}/>
-                <div>
+            <div style={{display: 'flex',flexDirection: 'row', alignItems: 'center'}}>
+                <img className={style.ImagemAlianca} src={AliancaSul} alt=""/>
+
+                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '25px'}}>
                   <p>Aliança Sul - Atendente Telemarketing Ativo;</p>
                   <p>Aliança Sul - BackOffice;</p>
                 </div>
-            </div>     
-              
-              Bosch - Aprendiz em Soluções Digitais.
+            </div>
           </div>
           
 
         </div>
-
-        <img className={style.BoschImage} src={BoschImage} alt="" width={350}/>
-        <img className={style.BoschImage} src={BoschImage70Anos} alt="" width={350}/>
         
       </div>
 
