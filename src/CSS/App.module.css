@@ -28,7 +28,6 @@
         align-items: center;
         flex-wrap: wrap;
         align-items: start;
-        margin-left: 80px;
         width: 40%;
     }
 
@@ -135,6 +134,7 @@
 
 .ImagemPerfil{
     border-radius: 999px;
+    margin-right: 15px;
     width: 250px;
 }
 
