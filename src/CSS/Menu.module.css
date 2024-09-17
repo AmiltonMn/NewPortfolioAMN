@@ -6,3 +6,14 @@ a{
 .RobotoFont{
     font-family: "Roboto", sans-serif;
 }
+
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: grey;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}

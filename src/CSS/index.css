@@ -15,3 +15,9 @@ body{
 html{
   scroll-behavior: smooth;
 }
+
+hr{
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

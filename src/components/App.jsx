@@ -3,27 +3,35 @@ import { Menu } from './Menu'
 import Perfil from '../assets/Perfil.jpg'
 import Ternaria from '../assets/Ternaria.png'
 import AliancaSul from '../assets/AliancaSul.jpg'
+import BoschImage from '../assets/BoschImage.jpg'
+import MyMovieListImage from '../assets/MyMovieList.png'
+import Apt4 from '../assets/Apt4.png'
 
 function App() {
   return (
-    <div>
+    <>
       <Menu />
 
       <div className={style.BemVindo}>
-          <h1>Bem vindo ao meu Portfolio!</h1>
+
+        <div>
+          <h1>
+            Hello, World!<br />
+            My name is<br />
+          </h1>
+          <h1>Amilton Moreira</h1>
+        </div>
 
           <img className={style.ImagemBemVindo} src="https://i.pinimg.com/originals/78/5a/1b/785a1b9c359640da6bc9cfe3670b42ba.png" alt="fotoDoBemVindo"/>
       </div>
 
       <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-        <hr style={{width: '95%'}}/>
+        <hr/>
       </div>
 
       <div className={`${style.SobreMim} ${style.RobotoFont}`} id='aboutMe'>
 
-        <div>
-            <img className={`${style.ImagemPerfil}`} src={Perfil} width={400} height={'auto'} alt="Foto minha talvez" />
-        </div>
+        <img className={`${style.ImagemPerfil}`} src={Perfil} height={'auto'} alt="Foto minha talvez" />
 
         <br />
 
@@ -44,7 +52,7 @@ function App() {
       </div>
 
       <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-        <hr style={{width: '95%'}}/>
+        <hr/>
       </div>
 
       <div className={`${style.RobotoFont} ${style.Experiencias}`} id='experiences'>
@@ -52,12 +60,20 @@ function App() {
 
           <h1 style={{marginBottom: '30px'}}>Experiências</h1>
           <div>
-            <div style={{display: 'flex',flexDirection: 'row', alignItems: 'center'}}>
+            <div className={style.Experiencia}>
                 <img className={style.ImagemAlianca} src={AliancaSul} alt=""/>
 
-                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '25px'}}>
+                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '25px', flexWrap: 'wrap'}}>
                   <p>Aliança Sul - Atendente Telemarketing Ativo;</p>
                   <p>Aliança Sul - BackOffice;</p>
+                </div>
+            </div>
+
+            <div className={style.Experiencia}>
+                <img className={style.BoschImage} src={BoschImage} alt=""/>
+
+                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '25px', alignItems: 'center'}}>
+                  <p>Bosch - Aprendiz em Soluções Digitais</p>
                 </div>
             </div>
           </div>
@@ -68,7 +84,7 @@ function App() {
       </div>
 
       <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-        <hr style={{width: '95%'}}/>
+        <hr/>
       </div>
 
       <div className={`${style.RobotoFont} ${style.Projetos}`} id='projects'>
@@ -85,37 +101,41 @@ function App() {
 
       <div className={`${style.RobotoFont} ${style.SobreProjetos}`}>
 
-        <div>
-            <a href="https://github.com/AmiltonMn/Ternaria"><img className={style.ImagemTernaria} src={Ternaria} alt="" width={600}/></a>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+          <a href="https://github.com/AmiltonMn/Ternaria/releases/tag/v1.0.0" target='_blank'><img className={`${style.ImagemTernaria}`} height={200} src={Ternaria} alt="" /></a>
+          
+          <div className={`${style.DescProjeto} ${style.RobotoFont}`}>
+            Ternaria
+          </div>
         </div>
 
-        <div style={{width: '40%', marginLeft: '40px'}}>
-          <h1 style={{marginBottom: '30px'}}>Ternaria</h1>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+          <a href="https://github.com/AmiltonMn/MyMovieList" target='_blank'><img className={`${style.ImagemTernaria}`} height={200} src={MyMovieListImage} alt="" /></a>
+          
+          <div className={`${style.DescProjeto} ${style.RobotoFont}`}>
+            My Movie List
+          </div>
+        </div>
 
-          <p>Este projeto foi desenvolvido para a conclusão da matéria de Lógica de Programação que tive no Senai. Ele foi desenvolvido com meus dois colegas Fernando e Eduardo Ribeiro</p>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+          <a href="https://github.com/AmiltonMn/MyMovieList" target='_blank'><img className={`${style.ImagemTernaria}`} height={200} src={Apt4} alt="" /></a>
+          
+          <div className={`${style.DescProjeto} ${style.RobotoFont}`}>
+            BOSCH-APT4-MAN
+          </div>
         </div>
 
       </div>
 
-      <div className={`${style.RobotoFont} ${style.SobreProjetos}`}>
-
-        <div style={{width: '40%', marginRight: '40px'}}>
-          <h1 style={{marginBottom: '30px'}}>My Movie List</h1>
-
-          <p>Este projeto foi desenvolvido para a finalização da matéria de Web, onde nosso objetivo era fazer um site com CRUD. O projeto foi desenvolvido em conjunto com meu colega Fernando.</p>
-        </div>
-
-        <div>
-            <a href="https://github.com/AmiltonMn/Ternaria"><img className={style.ImagemTernaria} src={Ternaria} alt="" width={600}/></a>
-        </div>
-
+      <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <hr/>
       </div>
 
-      <div id='contact'>
+      <div className={`${style.RobotoFont} ${style.Contatos}`} id='contact'>
         <h1>My Contacts!</h1>
       </div>
 
-    </div>
+    </>
   )
 }
 
