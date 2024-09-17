@@ -6,6 +6,8 @@ import AliancaSul from '../assets/AliancaSul.jpg'
 import BoschImage from '../assets/BoschImage.jpg'
 import MyMovieListImage from '../assets/MyMovieList.png'
 import Apt4 from '../assets/Apt4.png'
+import Whats from '../assets/whatsapp.png'
+import Github from '../assets/Github.png'
 
 function App() {
   return (
@@ -132,7 +134,13 @@ function App() {
       </div>
 
       <div className={`${style.RobotoFont} ${style.Contatos}`} id='contact'>
-        <h1>My Contacts!</h1>
+
+        <h1 style={{marginBottom: '25px'}}>My Contacts!</h1>
+
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          <a href="https://wa.me/5541998256176" target='_blank'><img className={style.ImagensContato} src={Whats} alt="" /></a>
+          <a href="https://github.com/AmiltonMn" target='_blank'><img className={style.ImagensContato} src={Github} alt="" /></a>
+        </div>
       </div>
 
     </>

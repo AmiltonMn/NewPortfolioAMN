@@ -104,9 +104,15 @@
     .Contatos{
         display: flex;
         justify-content: center;
+        flex-direction: column;
         flex-wrap: wrap;
         height: 500px;
         align-items: center;
+    }
+
+    .ImagensContato{
+        width: 25px;
+        margin-right: 15px;
     }
 
 /* Fontes */
